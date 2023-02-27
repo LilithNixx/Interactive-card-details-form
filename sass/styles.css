@@ -1,0 +1,476 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+}
+body .container {
+  max-width: 1440px;
+  min-height: 1000px;
+  display: flex;
+}
+@media (max-width: 1100px) {
+  body .container {
+    min-width: 375px;
+    height: 1000px;
+    flex-direction: column;
+    z-index: 0;
+  }
+}
+body .container .left-top {
+  width: 35%;
+  background-image: url(../images/bg-main-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 1100px) {
+  body .container .left-top {
+    background-image: url(../images/bg-main-mobile.png);
+    width: 100%;
+    height: 35%;
+    z-index: 0;
+  }
+}
+body .container .right-bottom {
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 10%;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom {
+    flex-direction: column;
+    width: 100%;
+    height: 65%;
+    left: 0;
+  }
+}
+body .container .right-bottom .form-container {
+  max-width: 450px;
+  margin-top: 190px;
+  margin-bottom: 190px;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container {
+    max-width: 500px;
+    margin-top: 70px;
+    padding-top: 100px;
+  }
+}
+body .container .right-bottom .form-container .form {
+  text-align: start;
+  color: hsl(278, 68%, 11%);
+  font-weight: 600;
+  margin: 20px;
+}
+body .container .right-bottom .form-container .form label {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: hsl(278, 68%, 11%);
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form label {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .right-bottom .form-container .form label {
+    font-size: 0.7em;
+  }
+}
+body .container .right-bottom .form-container .form .input-text {
+  padding-bottom: 7px;
+  padding-top: 20px;
+}
+body .container .right-bottom .form-container .form input {
+  width: 355px;
+  height: 40px;
+  border-radius: 6px;
+  border-width: 1px;
+  border-color: hsl(270, 3%, 87%);
+  outline: none;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form input {
+    width: 100%;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .right-bottom .form-container .form input {
+    height: 40px;
+  }
+}
+body .container .right-bottom .form-container .form ::placeholder {
+  padding-left: 15px;
+  font-size: 1.1em;
+  color: hsl(270, 3%, 87%);
+  font-weight: 600;
+}
+body .container .right-bottom .form-container .form .error {
+  text-transform: lowercase;
+  color: hsl(0, 100%, 66%);
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .error {
+    font-size: 0.7em;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .right-bottom .form-container .form .error {
+    font-size: -0.2px;
+  }
+}
+body .container .right-bottom .form-container .form .date-cvc {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .date-cvc {
+    flex-wrap: nowrap;
+    gap: 1px;
+  }
+}
+body .container .right-bottom .form-container .form .date-cvc .exp-date-container {
+  width: 50%;
+}
+body .container .right-bottom .form-container .form .date-cvc .cvc-container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .date-cvc .cvc-container {
+    margin-left: 10px;
+    width: 50%;
+  }
+}
+body .container .right-bottom .form-container .form .date-cvc .small-imp {
+  width: 77px;
+  height: 45px;
+  border: 1px solid hsl(279, 6%, 55%);
+  border-radius: 6px;
+  outline: none;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .date-cvc .small-imp {
+    width: 80px;
+    height: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .right-bottom .form-container .form .date-cvc .small-imp {
+    width: 70px;
+    height: 40;
+  }
+}
+body .container .right-bottom .form-container .form .date-cvc .small-imp-cvc {
+  width: 89px;
+  height: 45px;
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .date-cvc .small-imp-cvc {
+    width: 100%;
+    height: 50px;
+  }
+}
+body .container .right-bottom .form-container .form .confirm-btn {
+  margin-top: 25px;
+  width: 355px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.01em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+}
+@media screen and (max-width: 1100px) {
+  body .container .right-bottom .form-container .form .confirm-btn {
+    width: 100%;
+  }
+}
+body .container .right-bottom .form-container .form .confirm-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+body .container .card-front, body .container .card-back {
+  width: 400px;
+  height: 230px;
+  border-radius: 10px;
+  position: absolute;
+}
+@media screen and (max-width: 770px) {
+  body .container .card-front, body .container .card-back {
+    width: 400px;
+    height: 200px;
+    font-size: 0.9em;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .card-front, body .container .card-back {
+    width: 300px;
+    height: 200px;
+    font-size: 0.6em;
+  }
+}
+body .container .card-front {
+  background-image: url(../images/bg-card-front.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  left: 15%;
+  top: 40%;
+  color: hsl(0, 0%, 100%);
+  padding: 28px;
+}
+@media screen and (max-width: 1100px) {
+  body .container .card-front {
+    z-index: 20;
+    top: 5%;
+    left: 0;
+    right: 10%;
+    bottom: 1%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .card-front {
+    top: 20%;
+  }
+}
+body .container .card-front .circles {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 770px) {
+  body .container .card-front .circles {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .card-front .circles {
+    margin-bottom: 40px;
+  }
+}
+body .container .card-front .circles .big-circle {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+@media screen and (max-width: 375px) {
+  body .container .card-front .circles .big-circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+body .container .card-front .circles .small-circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+@media screen and (max-width: 375px) {
+  body .container .card-front .circles .small-circle {
+    width: 15px;
+    height: 15px;
+  }
+}
+body .container .card-front .card-num {
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+  font-size: 1.1em;
+}
+body .container .card-front .card-name-date {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 770px) {
+  body .container .card-front .card-name-date {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+body .container .card-back {
+  background-image: url(../images/bg-card-back.png);
+  background-position: center;
+  position: absolute;
+  left: 20%;
+  top: 80%;
+}
+body .container .card-back .security-num {
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+  position: absolute;
+  right: 60px;
+  top: 103px;
+}
+@media screen and (max-width: 1100px) {
+  body .container .card-back {
+    top: 28%;
+    left: 4%;
+    right: 0;
+    bottom: 100%;
+    margin: auto;
+  }
+  body .container .card-back .security-num {
+    top: 90px;
+  }
+}
+@media screen and (max-width: 375px) {
+  body .container .card-back {
+    top: 38%;
+  }
+}
+body .container .thank-you-container {
+  max-width: 400px;
+  margin-top: 190px;
+  margin-bottom: 190px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 20%;
+  left: 60%;
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  body .container .thank-you-container {
+    max-width: 600px;
+    top: 80%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}
+body .container .thank-you-container .logo {
+  margin-bottom: 30px;
+}
+body .container .thank-you-container .thank-you {
+  text-transform: uppercase;
+  color: hsl(278, 68%, 11%);
+  margin-bottom: 10px;
+  letter-spacing: 3px;
+}
+body .container .thank-you-container .subtitle {
+  color: hsl(279, 6%, 55%);
+  margin-bottom: 30px;
+}
+body .container .thank-you-container .continue-btn {
+  margin-top: 25px;
+  width: 355px;
+  height: 45px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1.01em;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(278, 68%, 11%);
+}
+body .container .thank-you-container .continue-btn:hover {
+  cursor: pointer;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+body .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+body .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -24,25 +24,25 @@
     <div class="right-bottom">
       <div class="form-container">
         <form class="form">  
-          <label for="name" class="input-text">Cardholder Name</label>
-          <input type="text" id="name" placeholder="e.g. Jane Appleseed">
+          <label for="name" class="input-text" aria-label="input-name-label">Cardholder Name</label>
+          <input type="text" id="name" placeholder="e.g. Jane Appleseed" aria-label="input-name">
           <p class="error">Can't be blank</p>
            
-          <label for="card-number" class="input-text">Card Number</label> 
-          <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16">
+          <label for="card-number" class="input-text" aria-label="input-number-label">Card Number</label> 
+          <input type="text" id="card-number" placeholder="e.g. 1234 5678 9123 0000" maxlength="16" minlength="16" aria-label="input-number">
           <p class="error">Wrong format, numbers only</p>
            
           <div class="date-cvc">
             <div class="exp-date-container">
-              <label class="input-text">Exp. Date (MM/YY)</label>
-              <input class="small-imp" type="text" id="month" placeholder="MM" maxlength="2">
-              <input class="small-imp" type="text" id="year" placeholder="YY" maxlength="2">
+              <label class="input-text" aria-label="input-exp-date-label">Exp. Date (MM/YY)</label>
+              <input class="small-imp" type="text" id="month" placeholder="MM" maxlength="2" aria-label="input-month">
+              <input class="small-imp" type="text" id="year" placeholder="YY" maxlength="2" aria-label="input-year">
               <p class="error">Can't be blank</p>
             </div>
                
             <div class="cvc-container">
-              <label class="input-text">CVC</label>
-              <input class="small-imp small-imp-cvc" type="text" id="number" placeholder="e.g. 123" maxlength="3">
+              <label class="input-text" aria-label="input-cvc-label">CVC</label>
+              <input class="small-imp small-imp-cvc" type="text" id="number" placeholder="e.g. 123" maxlength="3" aria-label="input-cvc">
               <p class="error">Can't be blank</p>
             </div> 
           </div>
@@ -74,7 +74,7 @@
     
     <!-- Completed state start -->
     <div class="thank-you-container">
-      <img class="logo" src="./images/icon-complete.svg">
+      <img class="logo" src="./images/icon-complete.svg" alt="logo">
       <h1 class="thank-you"> Thank you!</h1>
       <p class="subtitle">We've added your card details</p>
       <button class="continue-btn" type="button">Continue</button>
